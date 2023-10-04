@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/sort_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/title_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sort by Title"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/artist_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sort by Artist"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/date_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sort by Date Added"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/light_green" />
+    
+    <RadioGroup
+        android:id="@+id/sort_alpha_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/ascending_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Ascending"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/descending_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Descending"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/light_green" />
+
+    <Button
+        android:id="@+id/sort_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:text="SORT"
+        android:textSize="20sp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/light_green"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,TextSizeCheck" />
+
+
+</LinearLayout>

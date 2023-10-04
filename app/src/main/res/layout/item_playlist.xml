@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/playlist_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/cat_one"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/playlist_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black" />
+
+        <TextView
+            android:id="@+id/songs_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_more_vert"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
